@@ -1,0 +1,43 @@
+.task-form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 5px solid gray;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.form-element {
+    margin: 0.25rem 0;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.form-description {
+    max-width: 100%;
+    max-height: 5rem;
+}
+
+.form-completed-checkbox {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 1rem;
+}
+
+.form-completed {
+    display: flex;
+    align-items: center;
+}
+
+.task-form-submit {
+    border: none;
+    border-radius: 0.5rem;
+    width: 8rem;
+    height: 2.5rem;
+    margin-left: auto;
+    background-color: cornflowerblue;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
