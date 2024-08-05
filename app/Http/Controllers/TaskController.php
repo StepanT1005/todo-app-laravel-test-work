@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
+    public function show($id)
+    {
+        $task = Task::findOrFail($id);
+        return response()->json($task);
+    }
+
     public function index()
     {
         $tasks = Task::orderBy('is_completed', 'asc')->get();
