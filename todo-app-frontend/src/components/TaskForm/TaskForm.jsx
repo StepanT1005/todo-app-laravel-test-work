@@ -23,6 +23,10 @@ const TaskForm = ({ addTask, isUpdate = false, initialTask = {} }) => {
         if (isUpdate) taskData.is_completed = isCompleted;
 
         addTask(taskData);
+
+        setTitle("");
+        setDescription("");
+        setDueDate("");
     };
 
     return (
