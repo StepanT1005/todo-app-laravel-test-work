@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import TaskForm from "./components/TaskForm/TaskForm";
 import TaskList from "./components/TaskList/TaskList";
 import EditTask from "./components/EditTask/EditTask";
@@ -69,7 +69,9 @@ const App = () => {
         <Router>
             <main className="main">
                 {error && <p className="error">Error: {error}</p>}
-                <h1 className="title">Todo List</h1>
+                <Link to="/">
+                    <h1 className="title">Todo List</h1>
+                </Link>
                 <Routes>
                     <Route
                         path="/"
