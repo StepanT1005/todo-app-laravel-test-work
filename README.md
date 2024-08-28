@@ -62,7 +62,7 @@ yarn install
 
 npm start
 
-або
+or
 
 yarn start
 
